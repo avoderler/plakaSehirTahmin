@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:strokeColor="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#B5D4CB67"
+    >
+    <RelativeLayout
+        android:layout_width="220dp"
+        android:layout_height="280dp"
+        android:layout_centerInParent="true">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+
+        android:id="@+id/txt"
+        android:textSize="25sp"
+        android:textStyle= "bold"
+        android:text="Tahmin Oyunu"
+        />
+
+    <Button
+        android:id="@+id/btnNrml"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#FFC107"
+        android:text="Normal Oyun"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:onClick="btnActivityNm"
+
+        strokeColor:strokeColor="#000000"
+
+        strokeColor:strokeWidth="2dp" />
+    <Button
+        android:id="@+id/btnSrli"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:text="Süreli Oyun"
+        android:textSize="15sp"
+        android:textStyle= "italic"
+        android:backgroundTint="#8BC34A"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnNrml"
+        android:layout_marginTop="25dp"
+        strokeColor:strokeColor="#000000"
+android:onClick="btnActivitySR"
+        strokeColor:strokeWidth="2dp"/>
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:text="Çıkış"
+        android:textSize="15sp"
+        android:textStyle= "italic"
+        android:backgroundTint="#F44336"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnSrli"
+        android:layout_marginTop="25dp"
+        strokeColor:strokeColor="#000000"
+        android:onClick="btnExit"
+
+        strokeColor:strokeWidth="2dp"/>
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>
